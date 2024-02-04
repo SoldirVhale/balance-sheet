@@ -1,0 +1,57 @@
+html {
+    box-sizing:border-box;
+}
+
+body {
+    color: #0a0a23;
+    font-family: sans-serif;
+}
+
+/*This will target any span element whose class icludes sr-only.*/
+span[class~="sr-only"] {
+    border: 0;
+    clip:rect(1px, 1px, 1px, 1px); /*This property is used to define the visible portions of an element*/
+    clip-path: inset(50%); /*This property determines the shape the clip property should take.*/
+    width: 1px;
+    height: 1px;
+    overflow: hidden; /*To prevent text content from overflowing*/
+    white-space: nowrap; /*To prevent text content from overflowing*/
+    position:absolute; /*To take hidden elements out of the document flow.*/
+    padding: 0; /*To take hidden elements out of the document flow.*/
+    margin: -1px; /*To take hidden elements out of the document flow.*/
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse; /*This will display the nested elements from bottom to top.*/
+    gap: 1rem;
+}
+
+/* :first-of-type pseudo selecto is used to target the first element thrat matches the selector.*/
+h1 .flex span:first-of-type {
+    font-size: 0.7em;
+}
+
+/* :last-of-type pseudo selector does the exact opposite */
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display:flex;
+    justify-content: flex-end;
+    top: 0;
+    position: sticky;
+}
