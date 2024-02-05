@@ -1,2 +1,2 @@
 # balance-sheet
-freeCodeCamp Balance Sheet exercise.
+freeCodeCamp Balance Sheet project.
